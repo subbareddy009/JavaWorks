@@ -13,10 +13,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.google.common.io.Files;
-public class Current_Time {
+public class Scren_Shot {
 	public static void main(String n[]) {
 		    Date date=new Date();
-		    DateFormat dateFormat = new SimpleDateFormat("dd-MM-YYYY hh:mm:ss a");
+		    DateFormat dateFormat = new SimpleDateFormat("E,dd-MMMM-YYYY HH:mm:ss a z");
 		    String formattedDate=dateFormat.format(date);
 		    System.out.println("Current time of the day using Calendar - 12 hour format: "+ formattedDate); 
 		    System.setProperty("webdriver.chrome.driver", "C:\\drivers\\SUBU\\chromedriver_win32\\chromedriver.exe");
@@ -27,7 +27,7 @@ public class Current_Time {
 		 File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		 try {
 		  // now copy the  screenshot to desired location using copyFile //method
-			 Files.copy(src, new File("C:\\Users\\subba.r.annapureddy\\eclipse-workspace\\Works\\Test"));
+			 Files.copy(src, new File(System.getProperty("user.dir")+"/reports"));
 		 }
 		 catch (IOException e)
 		  {
