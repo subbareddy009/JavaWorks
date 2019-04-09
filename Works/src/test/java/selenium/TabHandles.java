@@ -21,7 +21,15 @@ public class TabHandles {
 		js.executeScript("window.open();");
 		ArrayList<String> list=new ArrayList(driver.getWindowHandles());
 		driver.switchTo().window(list.get(1));
-		driver.get("https://facebook.com");
+		String google="https://facebook.com/";
+		driver.get(google);
+		String s=driver.getCurrentUrl();
+		System.out.println(s);
+		if(s.equalsIgnoreCase(google)) {
+			
 		driver.close();
+	
+		
 	}
+}
 }
