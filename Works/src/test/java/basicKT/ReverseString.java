@@ -3,7 +3,7 @@ package basicKT;
 public class ReverseString {
 	  public static void main(String[] args) 
 	    { 
-	        String input = "rvr"; 
+	        String input = "rvr21"; 
 	  
 	        StringBuilder input1 = new StringBuilder(); 
 	  
