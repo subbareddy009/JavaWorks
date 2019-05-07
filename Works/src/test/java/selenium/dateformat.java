@@ -9,7 +9,7 @@ public class dateformat {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Date date=new Date();
-		SimpleDateFormat smd = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss ms");
+		SimpleDateFormat smd = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss ms");
 		String f = smd.format(date);
 		System.out.println(f);
 		
