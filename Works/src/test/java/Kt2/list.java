@@ -2,16 +2,18 @@ package Kt2;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 
 public class list {
 
 		
-		/*public static void main(String args[]) {
+		public static void main(String args[]) {
 		 
 		List<String> str=new ArrayList<String>();
 	     str.add("Paul");
@@ -38,6 +40,7 @@ public class list {
 	
 		System.out.println("get value:"+str.get(3)); 
 		 System.out.println("value of list:"+str);
+		
 		 
 		 ListIterator<String> itr=str.listIterator(); 
 		 while(itr.hasNext())
@@ -46,19 +49,23 @@ public class list {
 		    System.out.println(obj);
 		 
 		   }
-		 }*/
+		 
+		// Converting list to sets
+		 Set<String> str1=new HashSet<String>(str);
+		 System.out.println(str1);
+		 }
 		
-		//Map
+	/*	//Map
 		 public static void main(String args[])
 		 {
-			/* Integer i=new Integer(1);
+			 Integer i=new Integer(1);
 			 Integer i1=new Integer(2);
-			 Integer i2=new Integer(3);*/
+			 Integer i2=new Integer(3);
 			Map<Integer,String> map1=new HashMap<Integer,String>();
-		  /*  map1.put(i, "suba");
+		    map1.put(i, "suba");
 		    map1.put(i1, "suba1");
 		    map1.put(i2, " ");
-		    map1.put(i1, "");*/
+		    map1.put(i1, "");
 		    map1.put(10, "suba");
 		   map1.put(5, "suba");
 		   map1.put(4, "suba3"); 
@@ -85,7 +92,7 @@ public class list {
 	        } 
 		 
 		 
-		 }
+		 }*/
 	
 
 
