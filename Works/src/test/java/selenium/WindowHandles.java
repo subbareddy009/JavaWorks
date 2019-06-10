@@ -14,14 +14,14 @@ public class WindowHandles {
 
 
 	public static void main(String[] args) {
-	System.setProperty("webdriver.chrome.driver","C:\\drivers\\SUBU\\chromedriver_win32\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver","C:\\Drivers\\chromedriver.exe");
 	WebDriver driver=new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.get("http://demo.guru99.com/popup.php");
 	System.out.println(driver.getWindowHandles());
 	driver.findElement(By.xpath("//*[text()='Click Here']")).click();
 	String parentwin=driver.getWindowHandle();
-	System.out.println(parentwin);
+	System.out.println("parent:"+parentwin);
 	Set<String> Childwin= driver.getWindowHandles();
 	Iterator<String> child=Childwin.iterator();
 	String patrntwin1=child.next();

@@ -12,7 +12,7 @@ public class TabHandles {
 	
 	public static void main(String args[]) {
 		
-		System.setProperty("webdriver.chrome.driver","C:\\drivers\\SUBU\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Drivers\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://google.com");
@@ -21,15 +21,12 @@ public class TabHandles {
 		js.executeScript("window.open();");
 		ArrayList<String> list=new ArrayList(driver.getWindowHandles());
 		driver.switchTo().window(list.get(1));
-		String google="https://facebook.com/";
+		String google="https://www.facebook.com/";
 		driver.get(google);
 		String s=driver.getCurrentUrl();
 		System.out.println(s);
-		if(s.equalsIgnoreCase(google)) {
-			
-		driver.close();
-	
-		
+		if(s.equalsIgnoreCase(google)) {	
+		driver.close();	
 	}
 }
 }
