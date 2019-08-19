@@ -9,7 +9,7 @@ public class Keys {
 	
 	public static void main(String k[]) {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\drivers\\SUBU\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Driver\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		
 		//driver.navigate().to("https://www.cleartrip.com");

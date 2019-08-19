@@ -15,7 +15,7 @@ import java.util.Scanner;
 	            break;
             
 	        case 2: 
-	            switch (Branch) // nested switch 
+	            switch(Branch) // nested switch 
 	            { 
 	           
 	            case "CSE": 

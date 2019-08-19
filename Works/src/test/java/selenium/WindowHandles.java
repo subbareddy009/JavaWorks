@@ -14,7 +14,7 @@ public class WindowHandles {
 
 
 	public static void main(String[] args) {
-	System.setProperty("webdriver.chrome.driver","C:\\Drivers\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver","C:\\Driver\\chromedriver_win32\\chromedriver.exe");
 	WebDriver driver=new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.get("http://demo.guru99.com/popup.php");

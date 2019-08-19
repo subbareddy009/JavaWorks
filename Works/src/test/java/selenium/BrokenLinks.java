@@ -14,8 +14,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BrokenLinks {
     static public void main(String args[]) throws MalformedURLException,UnknownHostException,InterruptedException,IOException {
-	 System.setProperty("webdriver.chrome.driver", "C:\\drivers\\SUBU\\chromedriver_win32\\chromedriver.exe");
-	 WebDriver driver=new ChromeDriver();
+    	System.setProperty("webdriver.chrome.driver","C:\\Driver\\chromedriver_win32\\chromedriver.exe");
+    	WebDriver driver=new ChromeDriver();
+    	driver.manage().window().maximize();
 	 driver.get("https://www.crmpro.com/index.html");
 	 driver.manage().window().maximize();
 	 driver.manage().timeouts().implicitlyWait(1000000000, TimeUnit.MILLISECONDS);
