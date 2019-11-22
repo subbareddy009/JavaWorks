@@ -11,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 public class Actionss {
 	
@@ -26,20 +27,12 @@ public class Actionss {
 		String URL = "http://www.dhtmlx.com/docs/products/dhtmlxTree/index.shtml";
 		String URL1="https://www.google.com";
 		 driver.get(URL1);
-		  
-		 
-		  
-		 driver.manage().window().maximize();
-		  
+		 driver.manage().window().maximize();  
 		 driver.manage().timeouts().implicitlyWait(1000000000, TimeUnit.MILLISECONDS);
 		 driver.manage().timeouts().implicitlyWait(1000000000, TimeUnit.MILLISECONDS);
 		 driver.manage().timeouts().implicitlyWait(1000000000, TimeUnit.MILLISECONDS);
 		 driver.manage().timeouts().implicitlyWait(1000000000, TimeUnit.MILLISECONDS);
-		 
-		
-		
 		 WebElement toolTip=driver.findElement(By.xpath("//*[@title='Google apps']"));
-		 
 		builder.moveToElement(toolTip).build().perform();
 		 String s1=toolTip.getAttribute("title");
 		   System.out.println(toolTip);

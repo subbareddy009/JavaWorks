@@ -14,7 +14,7 @@ public class Keys {
 		
 		//driver.navigate().to("https://www.cleartrip.com");
 		
-		driver.navigate().to("http://www.leafground.com/pages/Link.html");
+		driver.get("http:www.google.com");
 		 WebElement si=driver.findElement(By.xpath("//a[@href='Button.html']"));
 		System.out.println(si.getText());
 		String Actual=driver.getTitle();
