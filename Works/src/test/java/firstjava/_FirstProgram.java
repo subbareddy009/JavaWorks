@@ -1,8 +1,8 @@
 package firstjava;
 
- class Name{
+ class Name
+ {
     int a=10;
-    
     public void main()
     {
     	int b=1;
@@ -10,16 +10,15 @@ package firstjava;
     	System.out.println(b+c);
     }
 }
-class _FirstProgram{
+class _FirstProgram
+{
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		int a=100;
 		System.out.println(a);
-		
 		Name x=new Name();
 		System.out.println(x.a);
 		x.main();
-}
-	
-
+    }
 }
