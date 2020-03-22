@@ -9,7 +9,7 @@ public class _Alerts {
 
 	public static void main(String k[]) {
 		
-		System.setProperty("webdriver.chrome.driver","C:\\drivers\\SUBU\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","E:\\Drivers\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		//driver.get("https://google.com");
